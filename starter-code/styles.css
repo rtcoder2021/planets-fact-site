@@ -1,0 +1,162 @@
+/*Styles Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul, li, a {
+    list-style: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+:root {
+    --space-background: #070724;
+    box-sizing: border-box; /* Include border in box model */
+  }
+
+body {
+  font-family: sans-serif;
+  background-color: var(--space-background);
+  position: relative;
+  overflow-x: hidden;
+  color: white;
+}
+
+@keyframes animated-background {
+    0%{
+      transform: translate3d(-550px, 0, 0);
+    }
+    100%{
+      transform: translate3d(-1692px, 0, 0);
+    }
+  }
+  .scrolling-image {
+    background-image: url(assets/background-stars.svg);
+    background-repeat: repeat-x;
+    width: 5000px;
+    height: 100vh;
+    z-index: -1;
+    position: absolute;
+    animation: animated-background 20s linear infinite;
+  }
+
+/*Header-Styles*/
+
+.header-container {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.header-text {
+    font-size: 1.8rem;
+}
+
+.material-symbols-outlined {
+  font-size: 36px; /* Adjust as needed */
+  color: aliceblue;
+  cursor: pointer;
+}
+.closeButton {
+    background: none;
+}
+
+hr {
+    opacity: 0.4;
+    max-width: 100%;
+    border: none;
+    height: 2px;
+    background-color: #ccc;
+  }
+
+.planets-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* planets styles */
+
+.planets {
+  margin: 1rem;
+  display: flex;
+  justify-content: space-between; /* Align items horizontally with space between them */
+  align-items: center; /* Center items vertically */
+  cursor: pointer;
+}
+
+.planets-container .planets {
+    transition: all .3s ease;
+
+  }
+
+  .planets-container .planets:hover {
+    transform: translateY(-0.8rem);
+  }
+
+.planets img {
+  max-width: 1rem;
+  height: auto;
+}
+
+.icon {
+  max-width: 1.1rem;
+  height: auto;
+}
+.planet-info > img {
+    margin-right: .8rem;
+
+}
+.planets .planet-info span {
+    line-height: 1.5em;
+}
+.planets-divider {
+    opacity: 0.5;
+    width: calc(100% - 30px); /* Adjust the width based on your needs */
+    border: none;
+    height: 1px;
+    background-color: #666666;
+    margin: 0 auto;
+    box-sizing: border-box; /* Include border in box model */
+  }
+
+
+a {
+    color: inherit;
+}
+
+/*Planet-Header Styles*/
+
+.planet-header {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'League Spartan';
+    letter-spacing: 1.92857px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    font-size: 0.688rem;
+    border-bottom: 1px solid grey;
+    border: 2px solid red;
+  }
+
+  .planet-header ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+
+  .planet-header li {
+    cursor: pointer;
+    color: white;
+  }
+
+
+  .planet-header li:hover {
+    color: #FFD700; /* Change color on hover */
+  }
+
+
+  /*Mercury Styles*/

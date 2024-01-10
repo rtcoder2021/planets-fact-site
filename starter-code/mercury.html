@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="./styles.css">
+  <title>Frontend Mentor | Planets fact site</title>
+</head>
+<body>
+  <div class="scrolling-image"></div>
+
+  <!-- Header -->
+  <div class="header-container">
+    <h2 class="header-text">THE PLANETS</h2>
+    <i class="material-symbols-outlined" id="menuIcon">menu</i>
+    <span id="closeButton"class="material-symbols-outlined" style="display: none;">
+      close
+      </span>
+  </div>
+  <hr>
+
+
+<!-- Planet Header-->
+<div class="planet-header">
+    <a href="#" class="overview">Overview</a>
+    <a href="#" class="structure">Structure</a>
+    <a href="#" class="surface">Surface</a>
+  </div>
+
+
+
+  <!-- Content for Mercury -->
+  <div class="planet-content">
+    <div class="planet-information">
+      <img src="./assets/planet-mercury.svg" alt="Mercury">
+      <h3>Mercury</h3>
+    </div>
+
+    <div class="overview">
+      <h4>Overview</h4>
+      <p id="overview-content"></p>
+      <a id="overview-source" href="#" target="_blank">Source</a>
+    </div>
+
+    <!-- Add similar sections for other information like structure, geology, etc. -->
+
+  </div>
+  <script src="./main.js"></script>
+</body>
+</html>

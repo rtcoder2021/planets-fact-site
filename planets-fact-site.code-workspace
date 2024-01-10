@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../planets-fact-site-figma"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "planets-fact-site"
+	}
+}
